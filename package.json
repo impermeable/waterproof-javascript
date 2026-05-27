@@ -1,0 +1,24 @@
+{
+  "name": "waterproof-editor-case-study",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "node esbuild.mjs",
+    "serve": "node esbuild.mjs --serve"
+  },
+  "dependencies": {
+    "@codemirror/lang-javascript": "^6.2.5",
+    "@impermeable/waterproof-editor": "=0.14.1",
+    "js-yaml": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "esbuild": "^0.27.1",
+    "typescript": "^5.9.3"
+  }
+}
