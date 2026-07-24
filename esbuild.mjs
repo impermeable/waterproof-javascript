@@ -12,8 +12,8 @@ const serveFlag = process.argv.includes("--serve");
 // Setting to `copy` means we bundle the fonts in dist. Setting this to `dataurl` includes the fonts as base64 encoded data in the generated css file.
 const fontLoader = "base64";
 const sharedConfig = {
-  entryPoints: ["src/index.ts"],
-  outfile: "out/index.js",
+  entryPoints: ["src/index.ts", "src/worker.ts"],
+  outdir: "out",
   bundle: true,
   format: "cjs",
   ...genSourcemap,
